@@ -1,10 +1,5 @@
-# We'll start by importing the DAG object
 from datetime import timedelta
 from airflow.models import DAG
-# We need to import the operators used in our tasks
-from airflow.operators.bash_operator import BashOperator
-# from airflow.operators.subdag_operator import SubDagOperator
-# We then import the days_ago function
 from airflow.utils.dates import days_ago
 import data_train_bucket_sensor as dts
 import pathlib
