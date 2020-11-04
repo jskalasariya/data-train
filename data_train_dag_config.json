@@ -591,12 +591,6 @@
 			"feedSLA": "09:30 UTC",
 			"bufferTime": "30",
 			"feedLocation": "/opt/disk1/"
-		}, {
-			"feedName": "Finance_data_source_pls_valuation_events_HBEU_YYYY-MM-DD",
-			"feedTransmissionType": "File",
-			"feedSLA": "09:30 UTC",
-			"bufferTime": "30",
-			"feedLocation": "/opt/disk1/"
 		}],
 		"outputFiles": [{
 			"feedName": "corb3_p2_t_cdr_extract_3607_YYYYMMDD_PRA_Monthly_Basel_lll_YYYYMMDD_HHMMSS.txt",

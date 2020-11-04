@@ -13,13 +13,12 @@ class data_train_bucket_sensor(BaseSensorOperator):
     # ui_color = '#f0eee4'
 
     @apply_defaults
-    def __init__(self, bucket, input_files, output_files, system_name, google_cloud_conn_id='google_cloud_storage_default', delegate_to=None, *args, **kwargs):
+    def __init__(self, bucket, input_files, output_files, google_cloud_conn_id='google_cloud_storage_default', delegate_to=None, *args, **kwargs):
         super(data_train_bucket_sensor, self).__init__(*args, **kwargs)
         self.bucket = bucket
         self.input_files = input_files
         self.output_files = output_files
         self.google_cloud_conn_id = google_cloud_conn_id
-		self.system_name = system_name
         self.delegate_to = delegate_to
 
     def poke(self, context):
@@ -30,18 +29,18 @@ class data_train_bucket_sensor(BaseSensorOperator):
         for input_file in self.input_files:
             hook = GoogleCloudStorageHook(google_cloud_storage_conn_id=self.google_cloud_conn_id,
                                           delegate_to=self.delegate_to)
-            if not hook.exists(self.bucket, self.system_name + '/' + input_file["feedName"]):
+            if not hook.exists(self.bucket, input_file["feedName"]):
                 list_missing_input_files.append(input_file)
 
         for output_file in self.output_files:
             hook = GoogleCloudStorageHook(google_cloud_storage_conn_id=self.google_cloud_conn_id,
                                           delegate_to=self.delegate_to)
-            if not hook.exists(self.bucket, self.system_name + '/' + output_file["feedName"]):
+            if not hook.exists(self.bucket, output_file["feedName"]):
                 list_missing_output_files.append(output_file)
 
         if len(list_missing_input_files) > 0:
             logging.info("===========================================================================")
-            logging.info("missing below input files from upstream ::")
+            logging.info(f"missing below input files from upstream in bucket {self.bucket}::")
             for missing_input in list_missing_input_files:
                 logging.info(missing_input["feedName"])
             all_files_exists = False
@@ -49,7 +48,7 @@ class data_train_bucket_sensor(BaseSensorOperator):
 
         if len(list_missing_output_files) > 0:
             logging.info("===========================================================================")
-            logging.info("Below output files are yet to generate ::")
+            logging.info(f"Below output files are yet to be generated in bucket {self.bucket} ::")
             for missing_output in list_missing_output_files:
                 logging.info(missing_output["feedName"])
             all_files_exists = False
