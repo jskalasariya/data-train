@@ -1,0 +1,804 @@
+{
+	"systems": [{
+		"systemName": "RIVER",
+		"inputFiles": [],
+		"outputFiles": [{
+			"feedName": "RIVER_HBUS_VALUATIONEXT",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "RIVER_HBUS_POSITION",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "RIVER_PORTFOLIO_MAPPING_NYH_SPARC",
+			"feedTransmissionType": "File",
+			"feedSLA": "10:00 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}]
+	}, {
+		"systemName": "SUMMIT",
+		"inputFiles": [],
+		"outputFiles": [{
+			"feedName": "FDSL_SUMMIT_TRADE_CACHE",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "FINANCE_DATA_SOURCE_PLS_VALUATION_EVENTS",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}]
+	}, {
+		"systemName": "SOPHIS",
+		"inputFiles": [],
+		"outputFiles": [{
+			"feedName": "sophis_microgen_cash",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sophis_microgen_cash_EC",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sophis_microgen_cash_EM",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sophis_microgen_cash_LD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "unsettle_sophis_microgen_cash",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "unsettle_sophis_microgen_cash_EC",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "unsettle_sophis_microgen_cash_EM",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "unsettle_sophis_microgen_cash_LD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sophis_microgen_deals",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sophis_microgen_deals_EC",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sophis_microgen_deaks_EM",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sophis_microgen_deals_LD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}]
+	}, {
+		"systemName": "NCOMS",
+		"inputFiles": [],
+		"outputFiles": [{
+			"feedName": "NCOMS_ASIAPACIFIC_CSA_AGREEMENT_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_ASIAPACIFIC_CSA_ATTR_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_ASIAPACIFIC_CSA_COLLATERAL_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_ASIAPACIFIC_CSA_CREDIT_DOWNGRADE_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_ASIAPACIFIC_CSA_MTM_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_ASIAPACIFIC_MARGIN_CALL_EXPOSURE_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_HASE_HKN_OTC_NON_CSA_MTM_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_HBAP_BHK_OTC_NON_CSA_MTM_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_HBAP_BHK_OTC_NON_CSA_MTM_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_HBAP_HBS_OTC_NON_CSA_MTM_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_HBAP_INM_OTC_NON_CSA_MTM_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_HBAP_MYM_OTC_NON_CSA_MTM_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_HBAP_REG_OTC_NON_CSA_MTM_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_HBAP_SEL_OTC_NON_CSA_MTM_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_HBAP_SGH_OTC_NON_CSA_MTM_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_HBAP_SYD_OTC_NON_CSA_MTM_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_HBAP_TKY_OTC_NON_CSA_MTM_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "NCOMS_HBAP_TWN_OTC_NON_CSA_MTM_YYYYMMDD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}]
+	}, {
+		"systemName": "SPARC",
+		"inputFiles": [{
+			"feedName": "sophis_microgen_cash",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sophis_microgen_cash_EC",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sophis_microgen_cash_EM",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sophis_microgen_cash_LD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "unsettle_sophis_microgen_cash",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "unsettle_sophis_microgen_cash_EC",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "unsettle_sophis_microgen_cash_EM",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "unsettle_sophis_microgen_cash_LD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sophis_microgen_deals",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sophis_microgen_deals_EC",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sophis_microgen_deaks_EM",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sophis_microgen_deals_LD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "RIVER_HBUS_VALUATIONEXT",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "RIVER_HBUS_POSITION",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "RIVER_PORTFOLIO_MAPPING_NYH_SPARC",
+			"feedTransmissionType": "File",
+			"feedSLA": "10:00 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}],
+		"outputFiles": [{
+			"feedName": "HBAP_AGREEMENT_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_AGREEMENT_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_AGREEMENT_ATTRIBUTE_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_AGREEMENT_ATTRIBUTE_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_AGREEMENT_ATTRIBUTE_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_COLLATERAL_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_COLLATERAL_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_COLLATERAL_DOWNGRADE_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_COLLATERAL_DOWNGRADE_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_CSA_AGREEMENT_VALUE_YYYYMMDD_HDR",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_CSA_AGREEMENT_VALUE_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_MAR_CALL_DISPUTE_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_MAR_CALL_DISPUTE_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_MAR_CALL_EXP_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_MAR_CALL_EXP_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_NON_CSA_AGREEMENT_VALUE_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_NON_CSA_AGREEMENT_VALUE_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sparc_hbeu_summit_trade_info_liq_YYYMMDD.zip",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sparc_hbeu_summit_trade_fsa_liq_YYYMMDD.zip",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "MG_HBEU_SUMM_attribtn.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "MG_HBEU_SUMM_attribtn_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "MG_HBEU_SUMM_TRADE_BAL.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "MG_HBEU_SUMM_TRADE_BAL_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sparc_hbeu_sophis_pos_fsa_liq_YYYMMDD.zip",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "sparc_hbeu_sophis_trade_fsa_liq_YYYMMDD.zip",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}]
+	}, {
+		"systemName": "CORB3",
+		"inputFiles": [{
+			"feedName": "HBAP_AGREEMENT_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_AGREEMENT_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_AGREEMENT_ATTRIBUTE_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_AGREEMENT_ATTRIBUTE_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_AGREEMENT_ATTRIBUTE_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_COLLATERAL_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_COLLATERAL_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_COLLATERAL_DOWNGRADE_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_COLLATERAL_DOWNGRADE_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_CSA_AGREEMENT_VALUE_YYYYMMDD_HDR",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_CSA_AGREEMENT_VALUE_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_MAR_CALL_DISPUTE_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_MAR_CALL_DISPUTE_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_MAR_CALL_EXP_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_MAR_CALL_EXP_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_NON_CSA_AGREEMENT_VALUE_YYYYMMDD.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:20 UTC",
+			"bufferTime": "25",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "HBAP_NON_CSA_AGREEMENT_VALUE_YYYYMMDD_HDR.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "MG_HBEU_SUMM_attribtn.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "MG_HBEU_SUMM_TRADE_BAL.csv",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "FDSL_SUMMIT_TRADE_CACHE",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "Finance_data_source_pls_valuation_events_HBEU_YYYY-MM-DD",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:30 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}],
+		"outputFiles": [{
+			"feedName": "corb3_p2_t_cdr_extract_3607_YYYYMMDD_PRA_Monthly_Basel_lll_YYYYMMDD_HHMMSS.txt",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "corb3_p2_FCR_Haircut_aggregation_HBAP_YYYYMMDD_PRA_Monthly_Basel_lll_YYYYMMDD_HHMMSS.txt",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "corb3_p2_FCR_Haircut_Collateral_stg_HBAP_YYYYMMDD_PRA_Monthly_Basel_lll_YYYYMMDD_HHMMSS.txt",
+			"feedTransmissionType": "File",
+			"feedSLA": "10:00 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		}]
+	}, {
+		"systemName": "GLMA",
+		"inputFiles": [{
+				"feedName": "sparc_hbeu_summit_trade_info_liq_YYYMMDD.zip",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:30 UTC",
+				"bufferTime": "30",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "sparc_hbeu_sophis_pos_fsa_liq_YYYMMDD.zip",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:15 UTC",
+				"bufferTime": "20",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "sparc_hbeu_nfost_trade_fsa_liq_YYYMMDD.zip",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:15 UTC",
+				"bufferTime": "20",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_ASIAPACIFIC_CSA_AGREEMENT_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:00 UTC",
+				"bufferTime": "15",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_ASIAPACIFIC_CSA_ATTR_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:15 UTC",
+				"bufferTime": "20",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_ASIAPACIFIC_CSA_COLLATERAL_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:20 UTC",
+				"bufferTime": "25",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_ASIAPACIFIC_CSA_CREDIT_DOWNGRADE_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:30 UTC",
+				"bufferTime": "30",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_ASIAPACIFIC_CSA_MTM_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:00 UTC",
+				"bufferTime": "15",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_ASIAPACIFIC_MARGIN_CALL_EXPOSURE_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:15 UTC",
+				"bufferTime": "20",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_HASE_HKN_OTC_NON_CSA_MTM_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:20 UTC",
+				"bufferTime": "25",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_HBAP_BHK_OTC_NON_CSA_MTM_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:30 UTC",
+				"bufferTime": "30",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_HBAP_BHK_OTC_NON_CSA_MTM_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:00 UTC",
+				"bufferTime": "15",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_HBAP_HBS_OTC_NON_CSA_MTM_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:15 UTC",
+				"bufferTime": "20",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_HBAP_INM_OTC_NON_CSA_MTM_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:20 UTC",
+				"bufferTime": "25",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_HBAP_MYM_OTC_NON_CSA_MTM_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:30 UTC",
+				"bufferTime": "30",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_HBAP_REG_OTC_NON_CSA_MTM_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:30 UTC",
+				"bufferTime": "30",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_HBAP_SEL_OTC_NON_CSA_MTM_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:00 UTC",
+				"bufferTime": "15",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_HBAP_SGH_OTC_NON_CSA_MTM_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:15 UTC",
+				"bufferTime": "20",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_HBAP_SYD_OTC_NON_CSA_MTM_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:20 UTC",
+				"bufferTime": "25",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_HBAP_TKY_OTC_NON_CSA_MTM_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:30 UTC",
+				"bufferTime": "30",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "NCOMS_HBAP_TWN_OTC_NON_CSA_MTM_YYYYMMDD",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:30 UTC",
+				"bufferTime": "30",
+				"feedLocation": "/opt/disk1/"
+			}
+
+
+		],
+		"outputFiles": [
+
+			{
+				"feedName": "GLRS.GLOBAL.LMAUK.TRADED_PRODUCT.YYYYMMDD.LOG",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:30 UTC",
+				"bufferTime": "30",
+				"feedLocation": "/opt/disk1/"
+			}, {
+				"feedName": "GLRS.GLOBAL.LMAUK.TRADING_BOOK_SCHEDULE.YYYYMMDD.LOG",
+				"feedTransmissionType": "File",
+				"feedSLA": "09:30 UTC",
+				"bufferTime": "30",
+				"feedLocation": "/opt/disk1/"
+			}
+
+		]
+	}, {
+		"systemName": "GLRS",
+		"inputFiles": [{
+			"feedName": "corb3_p2_t_cdr_extract_3607_YYYYMMDD_PRA_Monthly_Basel_lll_YYYYMMDD_HHMMSS.txt",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "corb3_p2_FCR_Haircut_aggregation_HBAP_YYYYMMDD_PRA_Monthly_Basel_lll_YYYYMMDD_HHMMSS.txt",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "corb3_p2_FCR_Haircut_Collateral_stg_HBAP_YYYYMMDD_PRA_Monthly_Basel_lll_YYYYMMDD_HHMMSS.txt",
+			"feedTransmissionType": "File",
+			"feedSLA": "10:00 UTC",
+			"bufferTime": "30",
+			"feedLocation": "/opt/disk1/"
+		},{
+			"feedName": "GLRS.GLOBAL.LMAUK.TRADED_PRODUCT.YYYYMMDD.LOG",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:00 UTC",
+			"bufferTime": "15",
+			"feedLocation": "/opt/disk1/"
+		}, {
+			"feedName": "GLRS.GLOBAL.LMAUK.TRADING_BOOK_SCHEDULE.YYYYMMDD.LOG",
+			"feedTransmissionType": "File",
+			"feedSLA": "09:15 UTC",
+			"bufferTime": "20",
+			"feedLocation": "/opt/disk1/"
+		}],
+		"outputFiles": []
+	}]
+}
